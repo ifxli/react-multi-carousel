@@ -98,12 +98,12 @@ function getTransformForPartialVsibile(
     return baseTransform;
   }
   const transform = baseTransform + currentSlide * partialVisibilityGutter;
-  if (shouldRemoveRightGutter) {
-    const remainingWidth =
-      state.containerWidth -
-      (state.itemWidth - partialVisibilityGutter) * slidesToShow;
-    return transform + remainingWidth;
-  }
+  // if (shouldRemoveRightGutter) {
+  //   const remainingWidth =
+  //     state.containerWidth -
+  //     (state.itemWidth - partialVisibilityGutter) * slidesToShow;
+  //   return transform + remainingWidth;
+  // }
   return transform;
 }
 
