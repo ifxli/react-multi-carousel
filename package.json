@@ -20,7 +20,8 @@
     "lint": "eslint src/**/*{.ts,.tsx}",
     "lint:fix": "eslint --fix src/**/*{.ts,.tsx}",
     "minify": "node minify.js",
-    "auto-changelog": "auto-changelog"
+    "auto-changelog": "auto-changelog",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
